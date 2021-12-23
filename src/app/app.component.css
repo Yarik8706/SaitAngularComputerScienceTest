@@ -1,0 +1,11 @@
+p {
+  font-family: Lato;
+}
+.container {
+  margin-left: 20px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 700;
+}

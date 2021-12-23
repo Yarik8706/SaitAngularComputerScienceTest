@@ -1,0 +1,16 @@
+<div class="question-module">
+  <p class="question">{{ title }}</p>
+
+  <div class="answer" *ngFor="let answer of Answers; let i = index">
+    <input
+      type="radio"
+      [id]="'Answer{{i}}'"
+      [name]="'answers'"
+      [value]="i"
+      (change)="setUserAnswer(answer)"
+    />
+    <label for="Answer{{ i }}">{{ answer }}</label>
+  </div>
+
+  <!-- <button (click)="setUserAnswer()">dghgs</button> -->
+</div>

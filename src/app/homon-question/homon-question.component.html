@@ -1,0 +1,19 @@
+<div class="question-module">
+  <p class="question">{{ title }}</p>
+  <div class="col">
+    <input
+      type="radio"
+      id="trueAnswer"
+      name="contact"
+      (change)="setUserAnswer(true)"
+    />
+    <label for="trueAnswer">Правда</label>
+    <input
+      type="radio"
+      id="falseAnswer"
+      name="contact"
+      (change)="setUserAnswer(true)"
+    />
+    <label for="falseAnswer">Ложь</label>
+  </div>
+</div>

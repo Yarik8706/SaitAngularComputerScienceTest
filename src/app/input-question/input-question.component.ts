@@ -10,17 +10,19 @@ export class InputQuestionComponent implements OnInit {
   @Input() title: string;
   @Input() stringTrueAnswers: string;
   public trueAnswers: string;
+  inputElement;
 
   constructor(private controlAnswerService: ControlAnswerService) {}
 
   ngOnInit() {
     this.trueAnswers = JSON.parse(this.stringTrueAnswers);
+    this.controlAnswerService.AddUserAnswer(this.title, false);
   }
 
-  setUserAnswer(value: string): void {
+  setUserAnswer(): void {
     let count = 0;
     for (let trueAnswer of this.trueAnswers) {
-      if (value.includes(trueAnswer)) {
+      if (this.inputElement.includes(trueAnswer)) {
         count++;
       }
     }

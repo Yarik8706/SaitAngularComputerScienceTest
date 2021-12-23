@@ -1,4 +1,11 @@
 <div class="question-module">
   <p class="question">{{ title }}</p>
-  <input type="text" id="contactChoice1" name="contact" />
+  <input
+    type="text"
+    value="Ответ"
+    id="contactChoice1"
+    name="contact"
+    (change)="setUserAnswer()"
+    [(ngModel)]="inputElement"
+  />
 </div>

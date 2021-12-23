@@ -32,5 +32,8 @@
     stringTrueAnswer="false"
   ></app-homon-question>
 
-  <div class="getResult"></div>
+  <div class="getResult">
+    <button (click)="GetUserAnswers()">Узнать результат теста</button>
+  </div>
+  <p *ngFor="let answer of userAnswers">{{ answer }}</p>
 </div>

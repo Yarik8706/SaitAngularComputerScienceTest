@@ -20,6 +20,7 @@ export class ChangeQuestionComponent implements OnInit {
   ngOnInit() {
     this.answersElement = document.getElementsByName('answers');
     this.Answers = JSON.parse(this.StringAnswers);
+    this.controlAnswerService.AddUserAnswer(this.title, false);
   }
 
   public setUserAnswer(value: string): void {

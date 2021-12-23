@@ -19,6 +19,7 @@ export class HomonQuestionComponent implements OnInit {
     } else {
       this.trueAnswer = false;
     }
+    this.controlAnswerService.AddUserAnswer(this.title, false);
   }
 
   setUserAnswer(value: boolean) {

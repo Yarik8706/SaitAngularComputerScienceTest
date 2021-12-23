@@ -2,7 +2,7 @@
   <h1 class="title">Тест по теме: "Правовая охрана программ и данных".</h1>
   <app-input-question
     title="Что такое авторское право?"
-    trueAnswer="Возможность ограничивать распространиние и использование данных программы"
+    stringTrueAnswers='["Возможность", "ограничивать", "распространиние", "данных программы"]'
   ></app-input-question>
   <app-change-question
     title="Авторские права распространяются на:"
@@ -11,10 +11,12 @@
   ></app-change-question>
   <app-homon-question
     title="Авторское право требует регистрации."
+    stringTrueAnswer="true"
   ></app-homon-question>
   <app-input-question
     title="Что такое лицензия?"
-    trueAnswer="['договор', 'право', 'использование', 'использовать', 'позволяющий','разрешающий']"
+    stringTrueAnswers='["договор", "право", "использование", "использовать", 
+    "позволяющий", "разрешающий"]'
   ></app-input-question>
   <app-change-question
     title="Что лишнее?"
@@ -22,9 +24,13 @@
   ></app-change-question>
   <app-homon-question
     title="Пользователь без доп.прав может сделать резервную копию программы"
+    stringTrueAnswer="false"
   ></app-homon-question>
 
   <app-homon-question
     title="Плагиат не считается нарушением лицензии."
+    stringTrueAnswer="false"
   ></app-homon-question>
+
+  <div class="getResult"></div>
 </div>

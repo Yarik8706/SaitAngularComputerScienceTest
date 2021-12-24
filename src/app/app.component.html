@@ -1,39 +1,64 @@
-<div class="container">
-  <h1 class="title">Тест по теме: "Правовая охрана программ и данных".</h1>
-  <app-input-question
-    title="Что такое авторское право?"
-    stringTrueAnswers='["Возможность", "ограничивать", "распространиние", "данных программы"]'
-  ></app-input-question>
-  <app-change-question
-    title="Авторские права распространяются на:"
-    StringAnswers='["Программы", "Базы данных", "ОС", "Языки программирования", 
-    "Документы"]'
-  ></app-change-question>
-  <app-homon-question
-    title="Авторское право требует регистрации."
-    stringTrueAnswer="true"
-  ></app-homon-question>
-  <app-input-question
-    title="Что такое лицензия?"
-    stringTrueAnswers='["договор", "право", "использование", "использовать", 
-    "позволяющий", "разрешающий"]'
-  ></app-input-question>
-  <app-change-question
-    title="Что лишнее?"
-    StringAnswers='["shareware", "open source", "hardware", "freeware"]'
-  ></app-change-question>
-  <app-homon-question
-    title="Пользователь без доп.прав может сделать резервную копию программы"
-    stringTrueAnswer="false"
-  ></app-homon-question>
+<div class="main">
+  <div class="container">
+    <h1 class="title">Тест по теме: "Правовая охрана программ и данных".</h1>
+    <app-input-question
+      title="Что такое авторское право?"
+      stringTrueAnswers='["Возможность", "ограничивать", "распространиние", "данных программы"]'
+    ></app-input-question>
+    <app-change-question
+      title="Авторские права не распространяются на:"
+      StringAnswers='["Программы", "Базы данных", "ОС", "Языки программирования"]'
+      trueAnswer="Языки программирования"
+    ></app-change-question>
+    <app-homon-question
+      title="Авторское право требует регистрации."
+      stringTrueAnswer="true"
+    ></app-homon-question>
+    <app-input-question
+      title="Что такое лицензия?"
+      stringTrueAnswers='["договор", "право", "использование", "использовать", 
+  "позволяющий", "разрешающий"]'
+    ></app-input-question>
+    <app-change-question
+      title="Что лишнее?"
+      StringAnswers='["shareware", "open source", "hardware", "freeware"]'
+      trueAnswer="hardware"
+    ></app-change-question>
+    <app-homon-question
+      title="Пользователь без доп.прав может сделать резервную копию программы"
+      stringTrueAnswer="false"
+    ></app-homon-question>
+    <app-homon-question
+      title="Плагиат не считается нарушением лицензии."
+      stringTrueAnswer="false"
+    ></app-homon-question>
+    <app-input-question
+      title="Что такое офисный пакет?"
+      stringTrueAnswers='["набор", "программы", "подготовка", "документ"]'
+    ></app-input-question>
+    <app-change-question
+      title="Электронная таблица от Microsoft:"
+      StringAnswers='["Calc", "Excel", "Base", "Impress"]'
+      trueAnswer="Excel"
+    ></app-change-question>
+    <app-input-question
+      title="Что такое графический редактор?"
+      stringTrueAnswers='["программа", "создание", "редактирование", "изображение"]'
+    ></app-input-question>
+    <app-change-question
+      title="Что лишнее?"
+      StringAnswers='["Браузер", "Эл.почта", "Видеоредактор", "Программа для онлайн-общения"]'
+      trueAnswer="Видеоредактор"
+    ></app-change-question>
+    <app-change-question
+      title="Что лишнее?"
+      StringAnswers='["Браузер", "Эл.почта", "Видеоредактор", "Программа для онлайн-общения"]'
+      trueAnswer="Видеоредактор"
+    ></app-change-question>
 
-  <app-homon-question
-    title="Плагиат не считается нарушением лицензии."
-    stringTrueAnswer="false"
-  ></app-homon-question>
-
-  <div class="getResult">
-    <button (click)="GetUserAnswers()">Узнать результат теста</button>
+    <div class="getResult">
+      <button (click)="GetUserAnswers()">Узнать результат теста</button>
+    </div>
+    <p *ngFor="let answer of userAnswers">{{ answer }}</p>
   </div>
-  <p *ngFor="let answer of userAnswers">{{ answer }}</p>
 </div>

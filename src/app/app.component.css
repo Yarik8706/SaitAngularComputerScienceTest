@@ -2,10 +2,20 @@ p {
   font-family: Lato;
 }
 .container {
-  margin-left: 20px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 500px;
+  background-color: white;
+  border: 5px groove blue;
 }
 
 .question {
   font-size: 20px;
   font-weight: 700;
+}
+.getResult {
+  padding-top: 30px;
+}
+.main {
+  background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1613684289_15-p-fon-dlya-prezentatsii-informatsionnie-tekh-15.jpg');
 }

@@ -10,7 +10,7 @@ export class InputQuestionComponent implements OnInit {
   @Input() title: string;
   @Input() stringTrueAnswers: string;
   public trueAnswers: string;
-  inputElement;
+  public inputElement: string | string[];
 
   constructor(private controlAnswerService: ControlAnswerService) {}
 
@@ -26,7 +26,7 @@ export class InputQuestionComponent implements OnInit {
         count++;
       }
     }
-    if (count == 3) {
+    if (count >= 2) {
       this.controlAnswerService.AddUserAnswer(this.title, true);
     } else {
       this.controlAnswerService.AddUserAnswer(this.title, false);

@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {}
 
   public GetUserAnswers() {
+    this.userAnswers = [];
     for (let [key, value] of this.controlAnswerService.userAnswers) {
       this.userAnswers.push(key + ' : ' + value);
     }

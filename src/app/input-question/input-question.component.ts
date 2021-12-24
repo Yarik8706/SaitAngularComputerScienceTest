@@ -26,7 +26,7 @@ export class InputQuestionComponent implements OnInit {
         count++;
       }
     }
-    if (count >= 2) {
+    if (count >= 3) {
       this.controlAnswerService.AddUserAnswer(this.title, true);
     } else {
       this.controlAnswerService.AddUserAnswer(this.title, false);

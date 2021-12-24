@@ -4,7 +4,7 @@ p {
 .container {
   padding: 10px;
   margin: 0 auto;
-  width: 500px;
+  width: 600px;
   background-color: white;
   border: 5px groove blue;
 }

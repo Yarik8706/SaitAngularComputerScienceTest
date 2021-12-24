@@ -51,10 +51,23 @@
       trueAnswer="Видеоредактор"
     ></app-change-question>
     <app-change-question
-      title="Что лишнее?"
-      StringAnswers='["Браузер", "Эл.почта", "Видеоредактор", "Программа для онлайн-общения"]'
-      trueAnswer="Видеоредактор"
+      title="Что не умеет звуковой редактор?"
+      StringAnswers='["Записывать звук", "Вырезать фрагменты зв. файла", "Синхронизировать файлы", "Автоматически исправлять неровные переходы звука"]'
+      trueAnswer="Автоматически исправлять неровные переходы звука"
     ></app-change-question>
+    <app-homon-question
+      title="Gimp - кроссплатформенная программа."
+      stringTrueAnswer="true"
+    ></app-homon-question>
+    <app-change-question
+      title="Что из этого - не мессенджер?"
+      StringAnswers='["WhatsApp", "Mail.ru", "Firefox", "Kopete"]'
+      trueAnswer="Firefox"
+    ></app-change-question>
+    <app-homon-question
+      title="Офисный пакет обычно включает в себя программу для управления данными."
+      stringTrueAnswer="true"
+    ></app-homon-question>
 
     <div class="getResult">
       <button (click)="GetUserAnswers()">Узнать результат теста</button>
